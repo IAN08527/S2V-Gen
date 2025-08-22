@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+textarea {
+  scrollbar-width: none; /* Firefox */
+}
+
+textarea::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Edge */
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(-100%);
+  }
+  
+  20% {
+    transform: translateX(-80%);
+  }
+  40% {
+    transform: translateX(-60%);
+  }
+  60% {
+    transform: translateX(-40%);
+  }
+  80% {
+    transform: translateX(-20%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-loading {
+  animation: loading 2s linear;
+}
